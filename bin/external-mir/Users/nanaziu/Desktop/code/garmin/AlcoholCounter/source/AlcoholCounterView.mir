@@ -1,0 +1,340 @@
+[ @file = "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [System,2,14,20]; ]
+import Toybox.System;
+[ @file = "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc"; @line = 5; @symbol_classdef = [AlcoholCounterView,5,6,24]; @symbol_extends<0> = [Ui,5,33,35]; @symbol_extends<1> = [View,5,36,40]; ]
+class AlcoholCounterView extends Ui.View {
+    [ @file = "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc"; @line = 5; ]
+    <init> {
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 7 8 ]
+        %tmp.1 = newd 3;
+        %tmp.2 = 0;
+        symbol [ Rez %tmp.4 8 7 10 ];
+        %tmp.4 = getv ? :Rez;
+        symbol [ Drawables %tmp.5 8 11 20 ];
+        %tmp.5 = getv %tmp.4 :Drawables;
+        symbol [ beer %tmp.6 8 21 25 ];
+        %tmp.6 = getv %tmp.5 :beer;
+        %tmp.7 = dup %tmp.1;
+        %tmp.8 = aputv %tmp.7 %tmp.2 %tmp.6;
+        %tmp.9 = 1;
+        symbol [ Rez %tmp.11 9 7 10 ];
+        %tmp.11 = getv ? :Rez;
+        symbol [ Drawables %tmp.12 9 11 20 ];
+        %tmp.12 = getv %tmp.11 :Drawables;
+        symbol [ shot %tmp.13 9 21 25 ];
+        %tmp.13 = getv %tmp.12 :shot;
+        %tmp.14 = dup %tmp.8;
+        %tmp.15 = aputv %tmp.14 %tmp.9 %tmp.13;
+        %tmp.16 = 2;
+        symbol [ Rez %tmp.18 10 7 10 ];
+        %tmp.18 = getv ? :Rez;
+        symbol [ Drawables %tmp.19 10 11 20 ];
+        %tmp.19 = getv %tmp.18 :Drawables;
+        symbol [ drink %tmp.20 10 21 26 ];
+        %tmp.20 = getv %tmp.19 :drink;
+        %tmp.21 = dup %tmp.15;
+        %tmp.22 = aputv %tmp.21 %tmp.16 %tmp.20;
+        putv self :bmpDict %tmp.22;
+    }
+    [ @file = "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc"; @line = 6; @position = 8; @symbol_vardef = [app,6,8,11]; ]
+    var app;
+    [ @file = "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc"; @line = 7; @position = 8; @symbol_vardef = [bmpDict,7,8,15]; ]
+    var bmpDict;
+    [ @file = "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc"; @line = 12; @symbol_functiondef = [initialize,12,13,23]; ]
+    function initialize() as Void {
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_12_26_15_4_start:
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 13 8 ]
+        symbol [ View %tmp.2 13 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 13 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 14 8 ]
+        %tmp.4 = self;
+        symbol [ getApp %tmp.5 14 14 20 ];
+        %tmp.5 = getv function %tmp.4 :getApp;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        symbol [ app ? 14 8 11 ];
+        putv self :app %tmp.6;
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_12_26_15_4_stop:
+    }
+    [ @file = "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc"; @line = 18; @symbol_functiondef = [onLayout,18,13,21]; @symbol_param<0> = [dc,18,22,24]; @symbol_param<0>_type<0> = [Dc,18,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+    }
+    [ @file = "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc"; @line = 25; @symbol_functiondef = [onShow,25,13,19]; ]
+    function onShow() as Void {
+    }
+    [ @file = "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc"; @line = 29; @symbol_functiondef = [onUpdate,29,13,21]; @symbol_param<0> = [dc,29,22,24]; @symbol_param<0>_type<0> = [Dc,29,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_29_40_66_4_start:
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 30 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 30 8 10 ];
+        symbol [ clear %tmp.2 30 11 16 ];
+        %tmp.2 = getv function %tmp.1 :clear;
+        invoke %tmp.1 %tmp.2();
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 32 8 ]
+        %tmp.3 = lgetv %dc;
+        symbol [ dc %tmp.3 32 8 10 ];
+        symbol [ setColor %tmp.4 32 11 19 ];
+        %tmp.4 = getv function %tmp.3 :setColor;
+        symbol [ Graphics %tmp.5 32 20 28 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.6 32 29 40 ];
+        %tmp.6 = getv %tmp.5 :COLOR_WHITE;
+        symbol [ Graphics %tmp.7 32 42 50 ];
+        %tmp.7 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.8 32 51 62 ];
+        %tmp.8 = getv %tmp.7 :COLOR_BLACK;
+        invoke %tmp.3 %tmp.4(%tmp.6, %tmp.8);
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 35 8 ]
+        [ "_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_29_40_66_4_start" "_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_29_40_66_4_stop" ]
+        %selected.1 = local;
+        symbol [ selected %selected.1 35 12 20 ];
+        symbol [ app %tmp.10 35 23 26 ];
+        %tmp.10 = getv ? :app;
+        symbol [ getSelected %tmp.11 35 27 38 ];
+        %tmp.11 = getv function %tmp.10 :getSelected;
+        %tmp.12 = invoke %tmp.10 %tmp.11();
+        lputv %selected.1 %tmp.12;
+        symbol [ selected %selected.1 35 12 20 ];
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 37 8 ]
+        [ "_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_29_40_66_4_start" "_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_29_40_66_4_stop" ]
+        %label.2 = local;
+        symbol [ label %label.2 37 12 17 ];
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 38 8 ]
+        [ "_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_29_40_66_4_start" "_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_29_40_66_4_stop" ]
+        %count.3 = local;
+        symbol [ count %count.3 38 12 17 ];
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 40 8 ]
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_40_8_48_8_if_stmt:
+        %tmp.13 = lgetv %selected.1;
+        symbol [ selected %tmp.13 40 11 19 ];
+        %tmp.14 = 0;
+        %tmp.15 = eq %tmp.13 %tmp.14;
+        bf %tmp.15 @_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_40_8_48_8_if_false;
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_40_8_48_8_if_true:
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_40_25_42_8_start:
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 41 12 ]
+        %tmp.16 = "Beer";
+        lputv %label.2 %tmp.16;
+        symbol [ label %label.2 41 12 17 ];
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_40_25_42_8_stop:
+        goto @_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_40_8_48_8_if_end;
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_40_8_48_8_if_false:
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 43 13 ]
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_43_13_48_8_if_stmt:
+        %tmp.17 = lgetv %selected.1;
+        symbol [ selected %tmp.17 43 16 24 ];
+        %tmp.18 = 1;
+        %tmp.19 = eq %tmp.17 %tmp.18;
+        bf %tmp.19 @_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_43_13_48_8_if_else_false;
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_43_13_48_8_if_true:
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_43_30_45_8_start:
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 44 12 ]
+        %tmp.20 = "Shot";
+        lputv %label.2 %tmp.20;
+        symbol [ label %label.2 44 12 17 ];
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_43_30_45_8_stop:
+        goto @_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_43_13_48_8_if_end;
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_43_13_48_8_if_else_false:
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_46_12_48_8_start:
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 47 12 ]
+        %tmp.21 = "Drink";
+        lputv %label.2 %tmp.21;
+        symbol [ label %label.2 47 12 17 ];
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_46_12_48_8_stop:
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_43_13_48_8_if_end:
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_40_8_48_8_if_end:
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 50 8 ]
+        symbol [ app %tmp.23 50 16 19 ];
+        %tmp.23 = getv ? :app;
+        symbol [ getDrink %tmp.24 50 20 28 ];
+        %tmp.24 = getv function %tmp.23 :getDrink;
+        %tmp.25 = lgetv %selected.1;
+        symbol [ selected %tmp.25 50 29 37 ];
+        %tmp.26 = invoke %tmp.23 %tmp.24(%tmp.25);
+        lputv %count.3 %tmp.26;
+        symbol [ count %count.3 50 8 13 ];
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 51 8 ]
+        [ "_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_29_40_66_4_start" "_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_29_40_66_4_stop" ]
+        %image.4 = local;
+        symbol [ image %image.4 51 12 17 ];
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 52 2 ]
+        [ "_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_29_40_66_4_start" "_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_29_40_66_4_stop" ]
+        %str.5 = local;
+        symbol [ str %str.5 52 6 9 ];
+        %tmp.27 = "";
+        lputv %str.5 %tmp.27;
+        symbol [ str %str.5 52 6 9 ];
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 53 2 ]
+        %tmp.28 = lgetv %label.2;
+        symbol [ label %tmp.28 53 8 13 ];
+        %tmp.29 = ": ";
+        %tmp.30 = add %tmp.28 %tmp.29;
+        %tmp.31 = lgetv %count.3;
+        symbol [ count %tmp.31 53 23 28 ];
+        %tmp.32 = add %tmp.30 %tmp.31;
+        lputv %str.5 %tmp.32;
+        symbol [ str %str.5 53 2 5 ];
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 55 2 ]
+        symbol [ Ui %tmp.33 55 10 12 ];
+        %tmp.33 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.34 55 13 25 ];
+        %tmp.34 = getv function %tmp.33 :loadResource;
+        symbol [ Rez %tmp.36 55 27 30 ];
+        %tmp.36 = getv ? :Rez;
+        symbol [ Drawables %tmp.37 55 31 40 ];
+        %tmp.37 = getv %tmp.36 :Drawables;
+        symbol [ Monkey %tmp.38 55 41 47 ];
+        %tmp.38 = getv %tmp.37 :Monkey;
+        %tmp.39 = invoke %tmp.33 %tmp.34(%tmp.38);
+        lputv %image.4 %tmp.39;
+        symbol [ image %image.4 55 2 7 ];
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 61 8 ]
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_61_8_63_8_if_stmt:
+        %tmp.40 = lgetv %image.4;
+        symbol [ image %tmp.40 61 12 17 ];
+        %tmp.41 = null;
+        %tmp.42 = ne %tmp.40 %tmp.41;
+        bf %tmp.42 @_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_61_8_63_8_if_end;
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_61_8_63_8_if_true:
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_61_27_63_8_start:
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 62 12 ]
+        %tmp.43 = lgetv %dc;
+        symbol [ dc %tmp.43 62 12 14 ];
+        symbol [ drawBitmap %tmp.44 62 15 25 ];
+        %tmp.44 = getv function %tmp.43 :drawBitmap;
+        %tmp.45 = 80;
+        %tmp.46 = 60;
+        %tmp.47 = lgetv %image.4;
+        symbol [ image %tmp.47 62 34 39 ];
+        %tmp.48 = as %tmp.47 { (!Null) };
+        invoke %tmp.43 %tmp.44(%tmp.45, %tmp.46, %tmp.48);
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_61_27_63_8_stop:
+        goto @_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_61_8_63_8_if_end;
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_61_8_63_8_if_end:
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 64 8 ]
+        %tmp.49 = lgetv %dc;
+        symbol [ dc %tmp.49 64 8 10 ];
+        symbol [ drawText %tmp.50 64 11 19 ];
+        %tmp.50 = getv function %tmp.49 :drawText;
+        %tmp.51 = 80;
+        %tmp.52 = 200;
+        symbol [ Graphics %tmp.53 64 29 37 ];
+        %tmp.53 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.54 64 38 49 ];
+        %tmp.54 = getv %tmp.53 :FONT_MEDIUM;
+        %tmp.55 = lgetv %str.5;
+        symbol [ str %tmp.55 64 51 54 ];
+        symbol [ Graphics %tmp.56 64 56 64 ];
+        %tmp.56 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.57 64 65 84 ];
+        %tmp.57 = getv %tmp.56 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.49 %tmp.50(%tmp.51, %tmp.52, %tmp.54, %tmp.55, %tmp.57);
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_29_40_66_4_stop:
+    }
+    [ @file = "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc"; @line = 71; @symbol_functiondef = [onHide,71,13,19]; ]
+    function onHide() as Void {
+    }
+    [ @file = "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc"; @line = 74; @symbol_functiondef = [prev,74,20,24]; ]
+    public
+    function prev() {
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_74_26_81_4_start:
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 75 8 ]
+        [ "_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_74_26_81_4_start" "_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_74_26_81_4_stop" ]
+        %selected.1 = local;
+        symbol [ selected %selected.1 75 12 20 ];
+        symbol [ app %tmp.2 75 23 26 ];
+        %tmp.2 = getv ? :app;
+        symbol [ getSelected %tmp.3 75 27 38 ];
+        %tmp.3 = getv function %tmp.2 :getSelected;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %selected.1 %tmp.4;
+        symbol [ selected %selected.1 75 12 20 ];
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 76 8 ]
+        %tmp.7 = lgetv %selected.1;
+        symbol [ selected %tmp.7 76 8 16 ];
+        %tmp.8 = sub %tmp.7 1;
+        lputv %selected.1 %tmp.8;
+        symbol [ selected %selected.1 76 8 16 ];
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 77 8 ]
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_77_8_79_8_if_stmt:
+        %tmp.9 = lgetv %selected.1;
+        symbol [ selected %tmp.9 77 12 20 ];
+        %tmp.10 = 0;
+        %tmp.11 = lt %tmp.9 %tmp.10;
+        bf %tmp.11 @_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_77_8_79_8_if_end;
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_77_8_79_8_if_true:
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_77_25_79_8_start:
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 78 12 ]
+        %tmp.12 = 2;
+        lputv %selected.1 %tmp.12;
+        symbol [ selected %selected.1 78 12 20 ];
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_77_25_79_8_stop:
+        goto @_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_77_8_79_8_if_end;
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_77_8_79_8_if_end:
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 80 8 ]
+        symbol [ Ui %tmp.13 80 8 10 ];
+        %tmp.13 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.14 80 11 24 ];
+        %tmp.14 = getv function %tmp.13 :requestUpdate;
+        invoke %tmp.13 %tmp.14();
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_74_26_81_4_stop:
+    }
+    [ @file = "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc"; @line = 83; @symbol_functiondef = [next,83,20,24]; ]
+    public
+    function next() {
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_83_26_91_4_start:
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 84 8 ]
+        [ "_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_83_26_91_4_start" "_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_83_26_91_4_stop" ]
+        %selected.1 = local;
+        symbol [ selected %selected.1 84 12 20 ];
+        symbol [ app %tmp.2 84 23 26 ];
+        %tmp.2 = getv ? :app;
+        symbol [ getSelected %tmp.3 84 27 38 ];
+        %tmp.3 = getv function %tmp.2 :getSelected;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %selected.1 %tmp.4;
+        symbol [ selected %selected.1 84 12 20 ];
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 85 8 ]
+        %tmp.7 = lgetv %selected.1;
+        symbol [ selected %tmp.7 85 8 16 ];
+        %tmp.8 = add %tmp.7 1;
+        lputv %selected.1 %tmp.8;
+        symbol [ selected %selected.1 85 8 16 ];
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 87 8 ]
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_87_8_89_8_if_stmt:
+        %tmp.9 = lgetv %selected.1;
+        symbol [ selected %tmp.9 87 12 20 ];
+        %tmp.10 = 2;
+        %tmp.11 = gt %tmp.9 %tmp.10;
+        bf %tmp.11 @_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_87_8_89_8_if_end;
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_87_8_89_8_if_true:
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_87_25_89_8_start:
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 88 12 ]
+        %tmp.12 = 0;
+        lputv %selected.1 %tmp.12;
+        symbol [ selected %selected.1 88 12 20 ];
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_87_25_89_8_stop:
+        goto @_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_87_8_89_8_if_end;
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_87_8_89_8_if_end:
+[ "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" 90 8 ]
+        symbol [ Ui %tmp.13 90 8 10 ];
+        %tmp.13 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.14 90 11 24 ];
+        %tmp.14 = getv function %tmp.13 :requestUpdate;
+        invoke %tmp.13 %tmp.14();
+_Users_nanaziu_Desktop_code_garmin_AlcoholCounter_source_AlcoholCounterView_mc_83_26_91_4_stop:
+    }
+}
+[ @file = "/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc"; @line = 1; ]
+<init> {
+}

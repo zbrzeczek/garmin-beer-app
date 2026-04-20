@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterMenuDelegate.mc" id="1" lineNum="4" parent="globals/AlcoholCounterMenuDelegate" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="2" lineNum="5" parent="globals/AlcoholCounterView" pc="268435472" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="2" lineNum="7" parent="globals/AlcoholCounterView" pc="268435483" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="3" lineNum="92" parent="globals" pc="268435561" symbol="getApp"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="3" lineNum="93" parent="globals" pc="268435571" symbol="getApp"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/bin/gen/no-device/source/Rez.mcgen" id="4" lineNum="7" parent="globals/Rez" pc="268435582" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="5" lineNum="5" parent="globals/AlcoholCounterDelegate" pc="268435602" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="6" lineNum="8" parent="globals/AlcoholCounterApp" pc="268435614" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterMenuDelegate.mc" id="7" lineNum="10" parent="globals/AlcoholCounterMenuDelegate" pc="268435626" symbol="onMenuItem"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterMenuDelegate.mc" id="7" lineNum="11" parent="globals/AlcoholCounterMenuDelegate" pc="268435629" symbol="onMenuItem"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterMenuDelegate.mc" id="7" lineNum="13" parent="globals/AlcoholCounterMenuDelegate" pc="268435637" symbol="onMenuItem"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterMenuDelegate.mc" id="7" lineNum="14" parent="globals/AlcoholCounterMenuDelegate" pc="268435648" symbol="onMenuItem"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterMenuDelegate.mc" id="7" lineNum="15" parent="globals/AlcoholCounterMenuDelegate" pc="268435664" symbol="onMenuItem"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterMenuDelegate.mc" id="7" lineNum="16" parent="globals/AlcoholCounterMenuDelegate" pc="268435675" symbol="onMenuItem"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterMenuDelegate.mc" id="7" lineNum="17" parent="globals/AlcoholCounterMenuDelegate" pc="268435692" symbol="onMenuItem"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterMenuDelegate.mc" id="7" lineNum="18" parent="globals/AlcoholCounterMenuDelegate" pc="268435703" symbol="onMenuItem"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterMenuDelegate.mc" id="7" lineNum="21" parent="globals/AlcoholCounterMenuDelegate" pc="268435714" symbol="onMenuItem"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterMenuDelegate.mc" id="8" lineNum="6" parent="globals/AlcoholCounterMenuDelegate" pc="268435726" symbol="initialize"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterMenuDelegate.mc" id="8" lineNum="7" parent="globals/AlcoholCounterMenuDelegate" pc="268435728" symbol="initialize"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="9" lineNum="83" parent="globals/AlcoholCounterView" pc="268435741" symbol="next"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="9" lineNum="84" parent="globals/AlcoholCounterView" pc="268435744" symbol="next"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="9" lineNum="85" parent="globals/AlcoholCounterView" pc="268435757" symbol="next"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="9" lineNum="87" parent="globals/AlcoholCounterView" pc="268435764" symbol="next"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="9" lineNum="88" parent="globals/AlcoholCounterView" pc="268435772" symbol="next"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="9" lineNum="90" parent="globals/AlcoholCounterView" pc="268435778" symbol="next"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="11" lineNum="18" parent="globals/AlcoholCounterView" pc="268435790" symbol="onLayout"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="12" lineNum="74" parent="globals/AlcoholCounterView" pc="268435793" symbol="prev"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="12" lineNum="75" parent="globals/AlcoholCounterView" pc="268435796" symbol="prev"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="12" lineNum="76" parent="globals/AlcoholCounterView" pc="268435809" symbol="prev"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="12" lineNum="77" parent="globals/AlcoholCounterView" pc="268435816" symbol="prev"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="12" lineNum="78" parent="globals/AlcoholCounterView" pc="268435823" symbol="prev"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="12" lineNum="80" parent="globals/AlcoholCounterView" pc="268435830" symbol="prev"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="13" lineNum="12" parent="globals/AlcoholCounterView" pc="268435842" symbol="initialize"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="13" lineNum="13" parent="globals/AlcoholCounterView" pc="268435844" symbol="initialize"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="13" lineNum="14" parent="globals/AlcoholCounterView" pc="268435856" symbol="initialize"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="15" lineNum="29" parent="globals/AlcoholCounterView" pc="268435870" symbol="onUpdate"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="15" lineNum="30" parent="globals/AlcoholCounterView" pc="268435873" symbol="onUpdate"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="15" lineNum="32" parent="globals/AlcoholCounterView" pc="268435881" symbol="onUpdate"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="15" lineNum="35" parent="globals/AlcoholCounterView" pc="268435897" symbol="onUpdate"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="15" lineNum="40" parent="globals/AlcoholCounterView" pc="268435910" symbol="onUpdate"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="15" lineNum="41" parent="globals/AlcoholCounterView" pc="268435917" symbol="onUpdate"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="15" lineNum="43" parent="globals/AlcoholCounterView" pc="268435927" symbol="onUpdate"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="15" lineNum="44" parent="globals/AlcoholCounterView" pc="268435935" symbol="onUpdate"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="15" lineNum="47" parent="globals/AlcoholCounterView" pc="268435945" symbol="onUpdate"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="15" lineNum="50" parent="globals/AlcoholCounterView" pc="268435952" symbol="onUpdate"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="15" lineNum="52" parent="globals/AlcoholCounterView" pc="268435969" symbol="onUpdate"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="15" lineNum="53" parent="globals/AlcoholCounterView" pc="268435976" symbol="onUpdate"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="15" lineNum="55" parent="globals/AlcoholCounterView" pc="268435989" symbol="onUpdate"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="15" lineNum="61" parent="globals/AlcoholCounterView" pc="268436022" symbol="onUpdate"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="15" lineNum="62" parent="globals/AlcoholCounterView" pc="268436028" symbol="onUpdate"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterView.mc" id="15" lineNum="64" parent="globals/AlcoholCounterView" pc="268436047" symbol="onUpdate"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="16" lineNum="28" parent="globals/AlcoholCounterDelegate" pc="268436069" symbol="onBack"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="16" lineNum="29" parent="globals/AlcoholCounterDelegate" pc="268436071" symbol="onBack"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="16" lineNum="30" parent="globals/AlcoholCounterDelegate" pc="268436100" symbol="onBack"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="16" lineNum="31" parent="globals/AlcoholCounterDelegate" pc="268436118" symbol="onBack"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="16" lineNum="32" parent="globals/AlcoholCounterDelegate" pc="268436145" symbol="onBack"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="16" lineNum="34" parent="globals/AlcoholCounterDelegate" pc="268436159" symbol="onBack"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="17" lineNum="42" parent="globals/AlcoholCounterDelegate" pc="268436161" symbol="onPreviousPage"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="17" lineNum="43" parent="globals/AlcoholCounterDelegate" pc="268436163" symbol="onPreviousPage"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="17" lineNum="44" parent="globals/AlcoholCounterDelegate" pc="268436179" symbol="onPreviousPage"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="18" lineNum="7" parent="globals/AlcoholCounterDelegate" pc="268436181" symbol="initialize"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="18" lineNum="8" parent="globals/AlcoholCounterDelegate" pc="268436183" symbol="initialize"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="18" lineNum="9" parent="globals/AlcoholCounterDelegate" pc="268436195" symbol="initialize"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="19" lineNum="21" parent="globals/AlcoholCounterDelegate" pc="268436209" symbol="onSelect"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="19" lineNum="22" parent="globals/AlcoholCounterDelegate" pc="268436211" symbol="onSelect"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="19" lineNum="23" parent="globals/AlcoholCounterDelegate" pc="268436238" symbol="onSelect"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="19" lineNum="25" parent="globals/AlcoholCounterDelegate" pc="268436249" symbol="onSelect"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="20" lineNum="37" parent="globals/AlcoholCounterDelegate" pc="268436251" symbol="onNextPage"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="20" lineNum="38" parent="globals/AlcoholCounterDelegate" pc="268436253" symbol="onNextPage"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterDelegate.mc" id="20" lineNum="39" parent="globals/AlcoholCounterDelegate" pc="268436269" symbol="onNextPage"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="21" lineNum="66" parent="globals/AlcoholCounterApp" pc="268436271" symbol="resetToday"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="21" lineNum="67" parent="globals/AlcoholCounterApp" pc="268436274" symbol="resetToday"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="21" lineNum="68" parent="globals/AlcoholCounterApp" pc="268436294" symbol="resetToday"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="21" lineNum="69" parent="globals/AlcoholCounterApp" pc="268436314" symbol="resetToday"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="22" lineNum="29" parent="globals/AlcoholCounterApp" pc="268436343" symbol="getInitialView"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="22" lineNum="30" parent="globals/AlcoholCounterApp" pc="268436345" symbol="getInitialView"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="23" lineNum="33" parent="globals/AlcoholCounterApp" pc="268436392" symbol="ensureTodayState"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="23" lineNum="34" parent="globals/AlcoholCounterApp" pc="268436395" symbol="ensureTodayState"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="23" lineNum="35" parent="globals/AlcoholCounterApp" pc="268436403" symbol="ensureTodayState"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="23" lineNum="37" parent="globals/AlcoholCounterApp" pc="268436418" symbol="ensureTodayState"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="23" lineNum="38" parent="globals/AlcoholCounterApp" pc="268436432" symbol="ensureTodayState"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="23" lineNum="39" parent="globals/AlcoholCounterApp" pc="268436448" symbol="ensureTodayState"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="23" lineNum="40" parent="globals/AlcoholCounterApp" pc="268436468" symbol="ensureTodayState"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="24" lineNum="45" parent="globals/AlcoholCounterApp" pc="268436500" symbol="changeFace"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="24" lineNum="46" parent="globals/AlcoholCounterApp" pc="268436502" symbol="changeFace"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="24" lineNum="48" parent="globals/AlcoholCounterApp" pc="268436517" symbol="changeFace"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="24" lineNum="48" parent="globals/AlcoholCounterApp" pc="268436527" symbol="changeFace"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="24" lineNum="49" parent="globals/AlcoholCounterApp" pc="268436539" symbol="changeFace"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="24" lineNum="49" parent="globals/AlcoholCounterApp" pc="268436550" symbol="changeFace"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="24" lineNum="50" parent="globals/AlcoholCounterApp" pc="268436561" symbol="changeFace"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="24" lineNum="51" parent="globals/AlcoholCounterApp" pc="268436572" symbol="changeFace"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="25" lineNum="59" parent="globals/AlcoholCounterApp" pc="268436591" symbol="addDrink"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="25" lineNum="60" parent="globals/AlcoholCounterApp" pc="268436594" symbol="addDrink"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="25" lineNum="61" parent="globals/AlcoholCounterApp" pc="268436609" symbol="addDrink"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="25" lineNum="62" parent="globals/AlcoholCounterApp" pc="268436624" symbol="addDrink"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="25" lineNum="63" parent="globals/AlcoholCounterApp" pc="268436643" symbol="addDrink"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="26" lineNum="87" parent="globals/AlcoholCounterApp" pc="268436646" symbol="getSelected"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="26" lineNum="88" parent="globals/AlcoholCounterApp" pc="268436648" symbol="getSelected"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="27" lineNum="20" parent="globals/AlcoholCounterApp" pc="268436654" symbol="onStart"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="27" lineNum="21" parent="globals/AlcoholCounterApp" pc="268436656" symbol="onStart"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="28" lineNum="54" parent="globals/AlcoholCounterApp" pc="268436664" symbol="getDrink"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="28" lineNum="55" parent="globals/AlcoholCounterApp" pc="268436667" symbol="getDrink"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="28" lineNum="56" parent="globals/AlcoholCounterApp" pc="268436685" symbol="getDrink"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="29" lineNum="15" parent="globals/AlcoholCounterApp" pc="268436698" symbol="initialize"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="29" lineNum="16" parent="globals/AlcoholCounterApp" pc="268436700" symbol="initialize"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="30" lineNum="73" parent="globals/AlcoholCounterApp" pc="268436713" symbol="getTodayKey"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="30" lineNum="74" parent="globals/AlcoholCounterApp" pc="268436716" symbol="getTodayKey"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="30" lineNum="75" parent="globals/AlcoholCounterApp" pc="268436728" symbol="getTodayKey"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="30" lineNum="77" parent="globals/AlcoholCounterApp" pc="268436745" symbol="getTodayKey"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/source/AlcoholCounterApp.mc" id="31" lineNum="25" parent="globals/AlcoholCounterApp" pc="268436833" symbol="onStop"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/bin/gen/no-device/source/Rez.mcgen" id="32" lineNum="17" parent="globals/Rez/Layouts" pc="268436836" symbol="MainLayout"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/bin/gen/no-device/source/Rez.mcgen" id="32" lineNum="18" parent="globals/Rez/Layouts" pc="268436847" symbol="MainLayout"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/bin/gen/no-device/source/Rez.mcgen" id="32" lineNum="20" parent="globals/Rez/Layouts" pc="268436856" symbol="MainLayout"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/bin/gen/no-device/source/Rez.mcgen" id="32" lineNum="22" parent="globals/Rez/Layouts" pc="268436959" symbol="MainLayout"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/bin/gen/no-device/source/Rez.mcgen" id="32" lineNum="24" parent="globals/Rez/Layouts" pc="268437062" symbol="MainLayout"/>
+        <entry filename="/Users/nanaziu/Desktop/code/garmin/AlcoholCounter/bin/gen/no-device/source/Rez.mcgen" id="32" lineNum="26" parent="globals/Rez/Layouts" pc="268437161" symbol="MainLayout"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="8389346" symbol="text"/>
+        <entry field="true" id="30" symbol="count_prefix"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="28" method="true" symbol="MainLayout"/>
+        <entry id="8388826" method="true" symbol="next"/>
+        <entry id="17" method="true" symbol="ensureTodayState"/>
+        <entry id="36" symbol="reset_today"/>
+        <entry field="true" id="31" symbol="menu_add_beer"/>
+        <entry field="true" id="32" symbol="menu_add_shot"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="20" method="true" symbol="getTodayKey"/>
+        <entry id="7" object="true" symbol="AlcoholCounterDelegate"/>
+        <entry field="true" id="10" symbol="app"/>
+        <entry field="true" id="29" symbol="AppName"/>
+        <entry id="14" symbol="COUNT_PROPERTY"/>
+        <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="8389081" method="true" symbol="onBack"/>
+        <entry id="21" method="true" symbol="resetToday"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="18" method="true" symbol="getDrink"/>
+        <entry id="16" method="true" symbol="changeFace"/>
+        <entry field="true" id="24" symbol="Monkey"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry field="true" id="25" symbol="beer"/>
+        <entry id="8389079" method="true" symbol="onPreviousPage"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry field="true" id="26" symbol="drink"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="27" symbol="shot"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="12" method="true" symbol="prev"/>
+        <entry id="8" object="true" symbol="AlcoholCounterMenuDelegate"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8389619" method="true" symbol="onSelect"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry field="true" id="22" symbol="selected"/>
+        <entry id="15" method="true" symbol="addDrink"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="11" symbol="bmpDict"/>
+        <entry field="true" id="23" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="9" object="true" symbol="AlcoholCounterView"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="6" object="true" symbol="AlcoholCounterApp"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="34" symbol="add_beer"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389109" method="true" symbol="onMenuItem"/>
+        <entry field="true" id="8389347" symbol="color"/>
+        <entry id="35" symbol="add_shot"/>
+        <entry id="13" module="true" symbol="Layouts"/>
+        <entry field="true" id="33" symbol="menu_reset_today"/>
+        <entry id="19" method="true" symbol="getSelected"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8389078" method="true" symbol="onNextPage"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="8389642" symbol="title"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435725" name="item" stackId="1" startPc="268435626"/>
+        <entry endPc="268435724" name="app" stackId="2" startPc="268435629"/>
+        <entry endPc="268435788" name="selected" stackId="1" startPc="268435744"/>
+        <entry endPc="268435840" name="selected" stackId="1" startPc="268435796"/>
+        <entry arg="true" endPc="268436068" name="dc" stackId="1" startPc="268435870"/>
+        <entry endPc="268436067" name="selected" stackId="2" startPc="268435873"/>
+        <entry endPc="268436067" name="label" stackId="3" startPc="268435873"/>
+        <entry endPc="268436067" name="count" stackId="4" startPc="268435873"/>
+        <entry endPc="268436067" name="image" stackId="5" startPc="268435873"/>
+        <entry endPc="268436067" name="str" stackId="6" startPc="268435873"/>
+        <entry endPc="268436341" name="i" stackId="1" startPc="268436314"/>
+        <entry endPc="268436498" name="todayKey" stackId="1" startPc="268436395"/>
+        <entry endPc="268436498" name="savedDate" stackId="2" startPc="268436395"/>
+        <entry endPc="268436495" name="i" stackId="3" startPc="268436468"/>
+        <entry arg="true" endPc="268436590" name="num" stackId="1" startPc="268436500"/>
+        <entry arg="true" endPc="268436645" name="amount" stackId="1" startPc="268436591"/>
+        <entry arg="true" endPc="268436645" name="type" stackId="2" startPc="268436591"/>
+        <entry endPc="268436645" name="nextCount" stackId="3" startPc="268436594"/>
+        <entry arg="true" endPc="268436663" name="state" stackId="1" startPc="268436654"/>
+        <entry arg="true" endPc="268436697" name="type" stackId="1" startPc="268436664"/>
+        <entry endPc="268436697" name="value" stackId="2" startPc="268436667"/>
+        <entry endPc="268436832" name="now" stackId="1" startPc="268436716"/>
+        <entry endPc="268436832" name="info" stackId="2" startPc="268436716"/>
+        <entry arg="true" endPc="268437180" name="dc" stackId="1" startPc="268436836"/>
+        <entry endPc="268437180" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268436847"/>
+        <entry endPc="268437180" name="rez_cmp_local_text_1193959466" stackId="3" startPc="268436847"/>
+        <entry endPc="268437180" name="rez_cmp_local_text_1139614796" stackId="4" startPc="268436847"/>
+        <entry endPc="268437180" name="rez_cmp_local_text_drinkCountLabel" stackId="5" startPc="268436847"/>
+    </localVars>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Monkey"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="shot"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_add_shot"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="beer"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="title"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="count_prefix"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_add_beer"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="drink"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_reset_today"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="58" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/AlcoholCounterMenuDelegate" offset="143" parentId="globals" symbolId="AlcoholCounterMenuDelegate" type="class"/>
+        <dataEntry label="globals/AlcoholCounterView" offset="196" parentId="globals" symbolId="AlcoholCounterView" type="class"/>
+        <dataEntry label="globals/Rez" offset="312" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/AlcoholCounterDelegate" offset="365" parentId="globals" symbolId="AlcoholCounterDelegate" type="class"/>
+        <dataEntry label="globals/AlcoholCounterApp" offset="454" parentId="globals" symbolId="AlcoholCounterApp" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="606" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="677" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="712" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="AlcoholCounterMenuDelegate" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435560" name="&lt;init&gt;" parent="AlcoholCounterView" startPc="268435472">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435581" name="getApp" startPc="268435561">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435601" name="&lt;init&gt;" parent="Rez" startPc="268435582">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435613" name="&lt;init&gt;" parent="AlcoholCounterDelegate" startPc="268435602">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435625" name="&lt;init&gt;" parent="AlcoholCounterApp" startPc="268435614">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435725" name="onMenuItem" parent="AlcoholCounterMenuDelegate" startPc="268435626">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435740" name="initialize" parent="AlcoholCounterMenuDelegate" startPc="268435726">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435789" name="next" parent="AlcoholCounterView" startPc="268435741">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="AlcoholCounterView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435792" name="onLayout" parent="AlcoholCounterView" startPc="268435790">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435841" name="prev" parent="AlcoholCounterView" startPc="268435793">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435869" name="initialize" parent="AlcoholCounterView" startPc="268435842">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="AlcoholCounterView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436068" name="onUpdate" parent="AlcoholCounterView" startPc="268435870">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436160" name="onBack" parent="AlcoholCounterDelegate" startPc="268436069">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436180" name="onPreviousPage" parent="AlcoholCounterDelegate" startPc="268436161">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436208" name="initialize" parent="AlcoholCounterDelegate" startPc="268436181">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436250" name="onSelect" parent="AlcoholCounterDelegate" startPc="268436209">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436270" name="onNextPage" parent="AlcoholCounterDelegate" startPc="268436251">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436342" name="resetToday" parent="AlcoholCounterApp" startPc="268436271">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436391" name="getInitialView" parent="AlcoholCounterApp" startPc="268436343">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436499" name="ensureTodayState" parent="AlcoholCounterApp" startPc="268436392">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436590" name="changeFace" parent="AlcoholCounterApp" startPc="268436500">
+            <param id="num"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436645" name="addDrink" parent="AlcoholCounterApp" startPc="268436591">
+            <param id="amount"/>
+            <param id="type"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436653" name="getSelected" parent="AlcoholCounterApp" startPc="268436646">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436663" name="onStart" parent="AlcoholCounterApp" startPc="268436654">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436697" name="getDrink" parent="AlcoholCounterApp" startPc="268436664">
+            <param id="type"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436712" name="initialize" parent="AlcoholCounterApp" startPc="268436698">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436832" name="getTodayKey" parent="AlcoholCounterApp" startPc="268436713">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436835" name="onStop" parent="AlcoholCounterApp" startPc="268436833">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437180" name="MainLayout" parent="Layouts" startPc="268436836">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

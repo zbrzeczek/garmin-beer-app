@@ -1,0 +1,6 @@
+<menu id="MainMenu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <menu-item id="main" label="@Strings.menu_main" />
+    <menu-item id="promiles" label="@Strings.menu_promiles" />
+    <menu-item id="history" label="@Strings.menu_history" />
+    <menu-item id="calories" label="@Strings.menu_calories" />
+</menu>

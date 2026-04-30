@@ -9,14 +9,14 @@ class AlcoholCounterDelegate extends WatchUi.BehaviorDelegate {
         app = getApp();
     }
 
-    // function onMenu() as Boolean {
-    //     System.println("Menu");
-    //     WatchUi.pushView(
-    //         new Rez.Menus.MainMenu(), 
-    //         new AlcoholCounterMenuDelegate(), 
-    //         WatchUi.SLIDE_UP);
-    //     return true;
-    // }
+    function onMenu() as Boolean {
+        System.println("Menu");
+        WatchUi.pushView(
+            new Rez.Menus.MainMenu(), 
+            new AlcoholCounterMenuDelegate(), 
+            WatchUi.SLIDE_UP);
+        return true;
+    }
 
     function onSelect() as Boolean {
         app.addDrink(1, app.getSelected());

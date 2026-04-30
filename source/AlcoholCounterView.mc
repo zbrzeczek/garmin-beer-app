@@ -50,16 +50,23 @@ class AlcoholCounterView extends Ui.View {
         count = app.getDrink(selected);
         var image;
 		var str = "";
+        var screenWidth = dc.getWidth();
+        var screenHeight = dc.getHeight();
 		str = label + ": " + count;
 
-		image = Ui.loadResource( Rez.Drawables.Monkey );
+		image = Ui.loadResource(bmpDict[selected]);
 
-        // var bmp = Ui.loadResource(Rez.Drawables.Monkey);
-        // System.println(bmp);
-        // dc.drawBitmap(10, 40, bmp);
-
-       	var img = Rez.Drawables.Monkey;
-        dc.drawBitmap(80, 60, img);
+        dc.drawBitmap(
+            screenWidth / 2 - image.getWidth()/2,                // Center X
+            screenHeight / 2 - image.getHeight()/2 - 20,
+            image);
+        dc.drawText(
+            screenWidth / 2,                // Center X
+            screenHeight / 2 + image.getHeight()/2,               // Center Y
+            Graphics.FONT_MEDIUM,             // Font
+            str,                    // Text
+            Graphics.TEXT_JUSTIFY_CENTER      // Justification
+        );
     }
 
     // Called when this View is removed from the screen. Save the

@@ -1,3 +1,5 @@
 .DS_Store
+resources/.DS_Store
+resources/drawables/.DS_Store
 
 /bin/*

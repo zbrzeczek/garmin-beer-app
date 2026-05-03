@@ -28,13 +28,12 @@ class AlcoholCounterView extends Ui.View {
     // Update the view
     function onUpdate(dc as Dc) as Void {
         dc.clear();
-
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
 
         //Call the parent onUpdate function to redraw the layout
-        var selected = app.getSelected();
+        var selected = app.getSelectedProperty();
 
-        var label;
+        var label = " ";
         var count;
 
         if(selected == 0){
@@ -47,7 +46,8 @@ class AlcoholCounterView extends Ui.View {
             label = "Drink";
         }
 
-        count = app.getDrink(selected);
+        count = Application.Storage.getValue(AlcoholModel.getCountKey(selected));
+        if (count == null) { Application.Storage.setValue(AlcoholModel.getCountKey(selected), 0);}
         var image;
 		var str = "";
         var screenWidth = dc.getWidth();
@@ -70,28 +70,9 @@ class AlcoholCounterView extends Ui.View {
     }
 
     // Called when this View is removed from the screen. Save the
-    // state of this View here. This includes freeing resources from
+    // state of this View here. Th is includes freeing resources from
     // memory.
     function onHide() as Void {
-    }
-
-    public function prev(){
-        var selected = app.getSelected();
-        selected--;
-        if (selected < 0){
-            selected = 2;
-        }
-        Ui.requestUpdate();
-    }
-
-    public function next(){
-        var selected = app.getSelected();
-        selected++;
-
-        if (selected > 2){
-            selected = 0;
-        }
-        Ui.requestUpdate();
     }
 
 }

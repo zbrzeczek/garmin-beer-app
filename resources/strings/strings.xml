@@ -5,7 +5,7 @@
     <string id="Text">Count:</string>
 
     <string id="menu_main">Main page</string>
-    <string id="menu_promiles">Estimated promiles</string>
-    <string id="menu_history">Drinking history</string>
+    <string id="menu_promiles">Promiles</string>
+    <string id="menu_history">History</string>
     <string id="menu_calories">Calories</string>
 </strings>

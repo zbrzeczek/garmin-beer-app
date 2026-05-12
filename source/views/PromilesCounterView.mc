@@ -78,9 +78,8 @@ class PromilesCounterView extends Ui.View {
     }
 
     private function recalculatePromiles(){
-        var beerGrams = Application.Storage.getValue(AlcoholModel.getCountKey(0)) * 500 * 0.05 * 0.8; 
-        var shotDrinkGrams = (Application.Storage.getValue(AlcoholModel.getCountKey(1)) 
-                            + Application.Storage.getValue(AlcoholModel.getCountKey(2)) * 2) * 50 * 0.40 * 0.8; // here it takes that one shot is 50 ml of 40% alcohol and drink is 100ml 40% alc
+        var beerGrams = app.getDrink(0) * 500 * 0.05 * 0.8; 
+        var shotDrinkGrams = ((app.getDrink(1) + app.getDrink(2)) * 2) * 50 * 0.40 * 0.8; // here it takes that one shot is 50 ml of 40% alcohol and drink is 100ml 40% alc
         
         var totalAlcohol = beerGrams + shotDrinkGrams;
         

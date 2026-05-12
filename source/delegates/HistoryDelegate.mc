@@ -19,20 +19,8 @@ class HistoryDelegate extends WatchUi.BehaviorDelegate {
         return true;
     }
 
-    function onSelect() as Boolean {
-        return true;
-    }
-
     function onBack() as Boolean {
+        app.route();
         return true;
     }
-
-    function onNextPage() as Boolean {
-        return true;
-    }
-
-    function onPreviousPage() as Boolean {
-        return true;
-    }
-    
 }

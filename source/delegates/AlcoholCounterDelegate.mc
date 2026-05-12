@@ -11,15 +11,20 @@ class AlcoholCounterDelegate extends WatchUi.BehaviorDelegate {
         BehaviorDelegate.initialize();
         app = getApp();
 
-        var todayKey = getTodayKey();
-        var savedDate = Application.Storage.getValue(AlcoholModel.DATE_PROPERTY) as String?;
+        // var todayKey = getTodayKey();
+        // var savedDate = Application.Storage.getValue(todayKey);
 
-        if (savedDate == null || savedDate != todayKey) {
-            Application.Storage.setValue(AlcoholModel.DATE_PROPERTY, todayKey);
-            for (var i = 0; i < AlcoholModel.getCountSize(); i++){
-                Application.Storage.setValue(AlcoholModel.DATE_PROPERTY, 0);
-            }
-        }
+        // if (savedDate == null) {
+        //     var baseAlcoCount = [0, 0, 0];
+        //     alcoCount = baseAlcoCount;
+        //     Application.Storage.setValue(todayKey, alcoCount);
+        //     // for (var i = 0; i < AlcoholModel.getCountSize(); i++){
+        //     //     Application.Storage.setValue(AlcoholModel.getCountKey(i), 0);
+        //     // }
+        // }
+        // else{
+        //     alcoCount = Application.Storage.getValue(todayKey);
+        // }
     }
 
     function onMenu() as Boolean {
@@ -32,67 +37,28 @@ class AlcoholCounterDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onSelect() as Boolean {
-        addDrink(1, app.getSelectedProperty());
+        app.addDrink(1);
+        System.println("adding drink");
         WatchUi.requestUpdate();
-
         return true;
     }
 
     function onBack() as Boolean {
-        var sel = app.getSelectedProperty();
-
-        if (getDrink(sel) > 0) {
-            addDrink(-1, sel);
-            WatchUi.requestUpdate();
-        }
+        app.removeDrink(1);
+        WatchUi.requestUpdate();
+        System.println("removing drink");
         return true;
     }
 
     function onNextPage() as Boolean {
-        changeFace(1);
+        app.changeFace(1, 3);
+        WatchUi.requestUpdate();
         return true;
     }
 
     function onPreviousPage() as Boolean {
-        changeFace(-1);
+        app.changeFace(-1, 3);
+        WatchUi.requestUpdate();
         return true;
     }
-
-    public function changeFace(num as Number) as Void {
-        var current = app.getSelectedProperty();
-        current += num;
-
-        if (current < 0){ current = 2; }
-        else if (current > 2) { current = 0; }
-
-        app.setSelectedProperty(current);
-
-        WatchUi.requestUpdate();
-    }
-
-    function getTodayKey() as String {
-        var now = Time.now();
-        var info = Gregorian.info(now, Time.FORMAT_SHORT);
-
-        return Lang.format(
-            "$1$-$2$-$3$",
-            [
-                info.year.format("%04d"),
-                info.month.format("%02d"),
-                info.day.format("%02d")
-            ]
-        );
-    }
-    
-    function getDrink(type as Number) as Number {
-        var value = Application.Storage.getValue(AlcoholModel.DATE_PROPERTY) as Number?;
-        return value == null ? 0 : value;
-    }
-
-    function addDrink(amount as Number, type as Number) as Number {
-        var nextCount = getDrink(type) + amount;
-        Application.Storage.setValue(AlcoholModel.getCountKey(type), nextCount);
-        return nextCount;
-    }
-
 }

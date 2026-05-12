@@ -6,13 +6,14 @@ import Toybox.WatchUi;
 class AlcoholCounterApp extends Application.AppBase {
     var selectedMenu = 0;
     var selectedProperty = 0;
-    var view;
-    var delegate;
+    var alcoCount;
 
     function initialize() {
-        view = new AlcoholCounterView();
-        delegate = new AlcoholCounterDelegate();
         AppBase.initialize();
+    }
+
+    function onStart(state) {
+        alcoCount = AlcoholModel.createEmpty();
     }
 
     function getInitialView() as [Views] or [Views, InputDelegates] {
@@ -37,6 +38,8 @@ class AlcoholCounterApp extends Application.AppBase {
 
     function route() {
         selectedProperty = 0;
+        var view;
+        var delegate;
 
         if (selectedMenu == 0) {
             view = new AlcoholCounterView();
@@ -50,13 +53,35 @@ class AlcoholCounterApp extends Application.AppBase {
             view = new HistoryView();
             delegate = new HistoryDelegate();
         }
-        else if (selectedMenu == 3) {
+        else {
             view = new CaloriesView();
             delegate = new CaloriesDelegate();
         }
 
         WatchUi.switchToView(view, delegate, WatchUi.SLIDE_IMMEDIATE);
     }
+
+    function addDrink(amount as Number) {
+        alcoCount = AlcoholModel.add(alcoCount, getSelectedProperty(), amount);
+        StorageService.save(AlcoholModel.getTodayKey(), alcoCount);
+    }
+
+    function removeDrink(amount as Number) {
+        alcoCount = AlcoholModel.remove(alcoCount, getSelectedProperty(), amount);
+        StorageService.save(AlcoholModel.getTodayKey(), alcoCount);
+    }
+
+    function getDrink(type as Number) {
+        return alcoCount[type];
+    }
+
+    function changeFace(dir as Number, faceSize as Number) {
+        selectedProperty += dir;
+
+        if (selectedProperty < 0) { selectedProperty = faceSize -1 ; }
+        else if (selectedProperty > faceSize - 1) { selectedProperty = 0; }
+    }
+
 }
 
 

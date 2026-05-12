@@ -1,45 +1,71 @@
 import Toybox.Graphics;
 import Toybox.System;
 using Toybox.WatchUi as Ui;
+import Toybox.Lang;
 
 class HistoryView extends Ui.View {
-    var app;
+     var app;
 
     function initialize() {
         View.initialize();
         app = getApp();
     }
 
-    // // // Load your resources here
-    function onLayout(dc as Dc) as Void {
-        setLayout(Rez.Layouts.MainLayout(dc));
-    }
+    function onUpdate(dc as Dc) {
 
-    // Called when this View is brought to the foreground. Restore
-    // the state of this View and prepare it to be shown. This includes
-    // loading resources into memory.
-    function onShow() as Void {
-    }
-
-    // Update the view
-    function onUpdate(dc as Dc) as Void {
         dc.clear();
 
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        var keys = AlcoholModel.getLastDaysKeys();
 
-        dc.drawText(
-            80,                // Center X
-            120,               // Center Y
-            Graphics.FONT_MEDIUM,             // Font
-            "history",                    // Text
-            Graphics.TEXT_JUSTIFY_CENTER      // Justification
-        );
+        var screenW = dc.getWidth();
+        var screenH = dc.getHeight();
+
+        var barWidth = 20;
+        var spacing = 5;
+
+        var maxHeight = screenH - 40;
+
+        // find max value for scaling
+        var maxValue = 1;
+
+        var values = [];
+
+        for (var i = 0; i < keys.size(); i++) {
+            var data = AlcoholModel.getDayData(keys[i]);
+            var score = getAlcoholScore(data);
+            values.add(score);
+
+            if (score > maxValue) {
+                maxValue = score;
+            }
+        }
+
+        // draw bars
+        for (var i = 0; i < values.size(); i++) {
+
+            var value = values[i];
+
+            var height = (value / maxValue) * maxHeight;
+
+            var x = 10 + i * (barWidth + spacing);
+            var y = screenH - height;
+
+            // bar
+            dc.fillRectangle(x, y, barWidth, height);
+
+            // label (day index)
+            dc.drawText(
+                x,
+                screenH - 10,
+                Graphics.FONT_TINY,
+                i,
+                Graphics.TEXT_JUSTIFY_CENTER
+            );
+        }
     }
 
-    // Called when this View is removed from the screen. Save the
-    // state of this View here. This includes freeing resources from
-    // memory.
-    function onHide() as Void {
+    function getAlcoholScore(data as Array) as Number {
+        return data[0] * 1 + data[1] * 2 + data[2] * 1.5;
     }
 
 }

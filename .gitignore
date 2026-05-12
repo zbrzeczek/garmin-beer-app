@@ -3,3 +3,9 @@ resources/.DS_Store
 resources/drawables/.DS_Store
 
 /bin/*
+developer_key
+*.prg
+*.prg.debug.xml
+/gen/*
+/internal-mir/*
+/mir/*

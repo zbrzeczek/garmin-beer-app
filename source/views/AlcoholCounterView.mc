@@ -14,7 +14,6 @@ class AlcoholCounterView extends Ui.View {
         app = getApp();
     }
 
-    // // // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.MainLayout(dc));
     }
@@ -46,8 +45,7 @@ class AlcoholCounterView extends Ui.View {
             label = "Drink";
         }
 
-        count = Application.Storage.getValue(AlcoholModel.getCountKey(selected));
-        if (count == null) { Application.Storage.setValue(AlcoholModel.getCountKey(selected), 0);}
+        count = app.getDrink(selected);
         var image;
 		var str = "";
         var screenWidth = dc.getWidth();
@@ -62,7 +60,7 @@ class AlcoholCounterView extends Ui.View {
             image);
         dc.drawText(
             screenWidth / 2,                // Center X
-            screenHeight / 2 + image.getHeight()/2,               // Center Y
+            screenHeight / 2 + image.getHeight()/2 - 20,               // Center Y
             Graphics.FONT_MEDIUM,             // Font
             str,                    // Text
             Graphics.TEXT_JUSTIFY_CENTER      // Justification

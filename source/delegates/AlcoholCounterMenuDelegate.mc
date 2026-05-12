@@ -23,6 +23,9 @@ class AlcoholCounterMenuDelegate extends WatchUi.MenuInputDelegate {
         else if (item == :calories) {
             app.setSelectedMenu(3);
         } 
+        else if (item == :exit) {
+            System.exit();
+        } 
 
         WatchUi.popView(WatchUi.SLIDE_DOWN);
 

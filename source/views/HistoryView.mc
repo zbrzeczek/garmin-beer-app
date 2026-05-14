@@ -12,18 +12,18 @@ class HistoryView extends Ui.View {
     }
 
     function onUpdate(dc as Dc) {
-
         dc.clear();
 
         var keys = AlcoholModel.getLastDaysKeys();
 
         var screenW = dc.getWidth();
-        var screenH = dc.getHeight();
+        var screenH = dc.getHeight(); 
 
-        var barWidth = 20;
-        var spacing = 5;
+        var barWidth = screenW/16+screenW/64;
+        var spacing = screenW/32;
 
-        var maxHeight = screenH - 40;
+        var bottomHeight = screenH/4 + 5;
+        var maxHeight = screenH - bottomHeight*2;
 
         // find max value for scaling
         var maxValue = 1;
@@ -40,27 +40,33 @@ class HistoryView extends Ui.View {
             }
         }
 
+        var x = screenW/8;
+
+        dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(x, bottomHeight+maxHeight, 7*barWidth+6*spacing, 3);
         // draw bars
         for (var i = 0; i < values.size(); i++) {
-
             var value = values[i];
 
             var height = (value / maxValue) * maxHeight;
-
-            var x = 10 + i * (barWidth + spacing);
-            var y = screenH - height;
+            // x = i * (barWidth + spacing);
+            var y = bottomHeight + (maxHeight - height);
 
             // bar
+            dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
             dc.fillRectangle(x, y, barWidth, height);
-
             // label (day index)
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
             dc.drawText(
-                x,
-                screenH - 10,
+                x + barWidth/2,
+                screenH - bottomHeight,
                 Graphics.FONT_TINY,
-                i,
+                values.size()-i,
                 Graphics.TEXT_JUSTIFY_CENTER
             );
+
+            x += barWidth + spacing;
+
         }
     }
 

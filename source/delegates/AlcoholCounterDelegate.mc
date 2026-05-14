@@ -28,7 +28,6 @@ class AlcoholCounterDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onMenu() as Boolean {
-        System.println("Menu");
         WatchUi.pushView(
             new Rez.Menus.MainMenu(), 
             new AlcoholCounterMenuDelegate(), 

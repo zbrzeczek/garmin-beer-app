@@ -2,6 +2,7 @@ import Toybox.Lang;
 import Toybox.Time;
 import Toybox.Time.Gregorian;
 import Toybox.Application;
+import Toybox.System;
 
 module AlcoholModel {
     const COUNT_SIZE = 3;
@@ -28,44 +29,32 @@ module AlcoholModel {
         var now = Time.now();
         var info = Gregorian.info(now, Time.FORMAT_SHORT);
 
-        return Lang.format(
-            "$1$-$2$-$3$",
-            [
-                Lang.format("%04d", [info.year]),
-                Lang.format("%02d", [info.month]),
-                Lang.format("%02d", [info.day])
-            ]
-        );
+        return info.year.toString() + "-" +
+           info.month + "-" +
+           info.day;
     }
 
-     function getLastDaysKeys() {
-
-        var keys = [];
+    function getLastDaysKeys() {
+        var keys = ["", "", "", "", "", "", ""];
 
         for (var i = 0; i < DAYS_BACK; i++) {
             var date = getDateOffset(i);
-            keys.add(date);
+            keys[keys.size()-i-1] = date;
         }
 
         return keys;
     }
 
     function getDateOffset(daysBack as Number) {
-
         var now = Time.now();
         var duration = new Time.Duration(SECONDS_PER_DAY * daysBack);
-        var then = Time.now().add(duration);
+        var then = Time.now().subtract(duration);
 
         var info = Gregorian.info(then, Time.FORMAT_SHORT);
 
-        return Lang.format(
-            "$1$-$2$-$3$",
-            [
-                Lang.format("%04d", [info.year]),
-                Lang.format("%02d", [info.month]),
-                Lang.format("%02d", [info.day])
-            ]
-        );
+        return info.year.toString() + "-" +
+           info.month + "-" +
+           info.day;
     }
 
     function getDayData(key as String) {

@@ -13,7 +13,7 @@ class AlcoholCounterApp extends Application.AppBase {
     }
 
     function onStart(state) {
-        alcoCount = AlcoholModel.createEmpty();
+        alcoCount = AlcoholModel.getDayData(AlcoholModel.getTodayKey());
     }
 
     function getInitialView() as [Views] or [Views, InputDelegates] {

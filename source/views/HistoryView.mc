@@ -29,8 +29,21 @@ class HistoryView extends Ui.View {
         var maxValue = 1;
 
         var values = [];
+        var dates = [];
 
         for (var i = 0; i < keys.size(); i++) {
+            // wstawianie numerku do skali
+            var day = keys[i];
+            var index = day.find("-");
+
+            while (index != null) {
+                day = day.substring(index + 1, day.length());
+                index = day.find("-");
+            }
+
+            dates.add(day);
+
+            // obliczanie wartosci promili i maxa do skali
             var data = AlcoholModel.getDayData(keys[i]);
             var score = getAlcoholScore(data);
             values.add(score);
@@ -59,9 +72,9 @@ class HistoryView extends Ui.View {
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
             dc.drawText(
                 x + barWidth/2,
-                screenH - bottomHeight,
-                Graphics.FONT_TINY,
-                values.size()-i,
+                screenH - bottomHeight+ 5,
+                Graphics.FONT_XTINY,
+                dates[i],
                 Graphics.TEXT_JUSTIFY_CENTER
             );
 
@@ -71,6 +84,8 @@ class HistoryView extends Ui.View {
     }
 
     function getAlcoholScore(data as Array) as Number {
+        System.println("2");
+        System.println(data[0] * 1 + data[1] * 2 + data[2] * 1.5);
         return data[0] * 1 + data[1] * 2 + data[2] * 1.5;
     }
 

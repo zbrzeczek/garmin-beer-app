@@ -24,6 +24,8 @@ class AlcoholCounterMenuDelegate extends WatchUi.MenuInputDelegate {
             app.setSelectedMenu(3);
         } 
         else if (item == :exit) {
+            StorageService.save(AlcoholModel.getTodayKey(), app.getAlcoCount());
+            StorageService.save("grams", app.getGrams());
             System.exit();
         } 
 

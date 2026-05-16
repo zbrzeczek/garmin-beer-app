@@ -8,6 +8,9 @@ module AlcoholModel {
     const COUNT_SIZE = 3;
     const DAYS_BACK = 7;
     const SECONDS_PER_DAY = 24 * 60 * 60;
+    const GRAMS = [500 * 0.05 * 0.8,     // beer
+                        50 * 0.4 * 0.8,     // shot
+                        80 * 0.4 * 0.8];    // drink
 
     function add(counts as Array, type as Number, amount as Number) as Array {
         counts[type] += amount;
@@ -62,4 +65,7 @@ module AlcoholModel {
         return data == null ? [0,0,0] : data;
     }
 
+    function getGrams(key as Number) as Float {
+        return GRAMS[key];
+    }
 }

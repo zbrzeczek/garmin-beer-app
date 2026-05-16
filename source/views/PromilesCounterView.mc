@@ -35,6 +35,7 @@ class PromilesCounterView extends Ui.View {
 
         //Call the parent onUpdate function to redraw the layout
         var selected = app.getSelectedProperty();
+        recalculatePromiles();
 
         var title;
         var number;
@@ -78,11 +79,9 @@ class PromilesCounterView extends Ui.View {
     }
 
     private function recalculatePromiles(){
-        var beerGrams = app.getDrink(0) * 500 * 0.05 * 0.8; 
-        var shotDrinkGrams = ((app.getDrink(1) + app.getDrink(2)) * 2) * 50 * 0.40 * 0.8; // here it takes that one shot is 50 ml of 40% alcohol and drink is 100ml 40% alc
-        
-        var totalAlcohol = beerGrams + shotDrinkGrams;
-        
+        var totalAlcohol = app.getGrams();
+        System.println(totalAlcohol);
+
         var coeff = profile.gender == UserProfile.GENDER_FEMALE ? 0.6 : 0.7;
         var weight = profile.weight / 1000.0;
 

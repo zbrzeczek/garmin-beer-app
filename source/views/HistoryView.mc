@@ -45,6 +45,10 @@ class HistoryView extends Ui.View {
 
             // obliczanie wartosci promili i maxa do skali
             var data = AlcoholModel.getDayData(keys[i]);
+            if (i == keys.size() - 1){
+                data = app.getAlcoCount();
+            }
+
             var score = getAlcoholScore(data);
             values.add(score);
 
@@ -84,8 +88,6 @@ class HistoryView extends Ui.View {
     }
 
     function getAlcoholScore(data as Array) as Number {
-        System.println("2");
-        System.println(data[0] * 1 + data[1] * 2 + data[2] * 1.5);
         return data[0] * 1 + data[1] * 2 + data[2] * 1.5;
     }
 
